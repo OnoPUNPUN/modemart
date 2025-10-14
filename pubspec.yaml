@@ -15,11 +15,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # Utility Package
+  http: ^1.5.0
+  intl: ^0.20.2
+  logger: ^2.6.2
+  url_launcher: ^6.3.2
+
   iconsax_flutter: ^1.0.1
   cupertino_icons: ^1.0.8
 
   # State Mangement
   get: ^4.7.2
+  get_storage: ^2.1.1
 
 # Packages used only during development/testing.
 dev_dependencies:
