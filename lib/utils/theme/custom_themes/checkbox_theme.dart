@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-class CheckboxTheme {
-  CheckboxTheme._(); // To avoid creating instances
+class AppCheckboxTheme {
+  AppCheckboxTheme._(); // To avoid creating instances
 
-  // Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith(((states) {
@@ -22,7 +21,6 @@ class CheckboxTheme {
     })),
   ); // CheckboxThemeData
 
-  // Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith(((states) {

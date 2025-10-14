@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ChipTheme {
-  ChipTheme._();
+class AppChipTheme {
+  AppChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
     disabledColor: Colors.grey.withOpacity(0.4),
@@ -11,7 +11,7 @@ class ChipTheme {
     checkmarkColor: Colors.white,
   ); // ChipThemeData
 
-  static const darkChipTheme = ChipThemeData(
+  static ChipThemeData darkChipTheme = ChipThemeData(
     disabledColor: Colors.grey,
     labelStyle: TextStyle(color: Colors.white),
     selectedColor: Colors.blue,

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-/* -- Light & Dark Outlined Button Themes -- */
-class OutlinedButtonTheme {
-  OutlinedButtonTheme._(); // To avoid creating instances
+class AppOutlinedButtonTheme {
+  AppOutlinedButtonTheme._(); // To avoid creating instances
 
-  /* -- Light Theme -- */
+
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
@@ -20,7 +19,6 @@ class OutlinedButtonTheme {
     ),
   ); // OutlinedButtonThemeData
 
-  /* -- Dark Theme -- */
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       foregroundColor: Colors.white,
