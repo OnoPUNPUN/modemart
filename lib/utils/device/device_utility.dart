@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher.dart' as launcher;
 
-class TDeviceUtils {
-  TDeviceUtils._(); // Private constructor to prevent instantiation.
+class AppDeviceUtils {
+  AppDeviceUtils._(); // Private constructor to prevent instantiation.
 
   static void setFullScreen(bool enable) {
     SystemChrome.setEnabledSystemUIMode(

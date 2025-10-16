@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:modemart/utils/theme/theme.dart';
 
 import 'app.dart';
 
