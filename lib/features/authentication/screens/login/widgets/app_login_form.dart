@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:modemart/features/authentication/screens/signup/sign_up.dart';
 
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
 class AppLoginForm extends StatelessWidget {
-  const AppLoginForm({
-    super.key,
-  });
+  const AppLoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class AppLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const SignUp()),
                 child: Text(AppTextStrings.createAccount),
               ),
             ),
