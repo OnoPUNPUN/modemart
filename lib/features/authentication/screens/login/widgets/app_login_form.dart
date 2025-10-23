@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:modemart/features/authentication/screens/signup/sign_up.dart';
+import 'package:modemart/features/authentication/screens/signup/screens/sign_up.dart';
 
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_strings.dart';
