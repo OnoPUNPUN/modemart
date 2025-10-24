@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:modemart/features/shop/screens/home/home.dart';
 import 'package:modemart/utils/constants/colors.dart';
 import 'package:modemart/utils/helpers/helper_functions.dart';
+import 'common/controllers/navigation_controller.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -35,15 +35,4 @@ class NavigationMenu extends StatelessWidget {
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
     );
   }
-}
-
-class NavigationController extends GetxController {
-  final Rx<int> selectedIndex = 0.obs;
-
-  final screens = [
-    const Home(),
-    Container(color: Colors.red),
-    Container(color: Colors.blue),
-    Container(color: Colors.yellow),
-  ];
 }
