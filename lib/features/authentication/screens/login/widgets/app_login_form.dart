@@ -4,6 +4,7 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/features/authentication/password_configuration/forget_password.dart';
 import 'package:modemart/features/authentication/screens/signup/screens/sign_up.dart';
 
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
@@ -61,7 +62,7 @@ class AppLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(NavigationMenu()),
                 child: Text(AppTextStrings.signIn),
               ),
             ),
