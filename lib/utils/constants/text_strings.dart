@@ -78,7 +78,7 @@ class AppTextStrings {
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Mahmoud Hamdy";
+  static const String homeAppbarSubTitle = "Tonmoy";
   static const String searchContainer = "Search in Store";
   static const String popularCategories = "Popular Categories";
 
