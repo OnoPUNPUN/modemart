@@ -48,7 +48,7 @@ class AppImages {
   static const String laptopsIcon = "assets/icons/categories/laptops.png";
   static const String mensShirtsIcon =
       "assets/icons/categories/mens-shirts.png";
-  static const String mensShoesIcon = "assets/icons/categories/mens-shoes.png";
+  static const String mensShoesIcon = "assets/icons/categories/icons8-shoes-64.png";
   static const String mensWatchesIcon =
       "assets/icons/categories/mens-watches.png";
   static const String mobileAccessoriesIcon =
@@ -58,7 +58,7 @@ class AppImages {
   static const String smartphonesIcon =
       "assets/icons/categories/smartphones.png";
   static const String sportsAccessoriesIcon =
-      "assets/icons/categories/sports-accessories.png";
+      "assets/icons/categories/icons8-bowling-64.png";
 
   static const String sunglassesIcon = "assets/icons/categories/sunglasses.png";
   static const String tabletsIcon = "assets/icons/categories/tablets.png";
