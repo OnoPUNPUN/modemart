@@ -126,15 +126,15 @@ class AppImages {
 
   // -- Products
   static const String productImage5 =
-      "assets/images/products/product-shirt.png";
+      "assets/images/products/leather_jacket_3.png";
   static const String productImage6 =
       "assets/images/products/product-slippers.png";
   static const String productImage11 =
-      "assets/images/products/samsung_s9_mobile.png";
+      "assets/images/products/nike-shoes.png";
   static const String productImage12 =
       "assets/images/products/samsung_s9_mobile_withback.png";
   static const String productImage13 =
-      "assets/images/products/samsung_s9_mobile_back.png";
+      "assets/images/products/tomi_dogfood.png";
   //list of product images
   static const List<String> topProducts = [
     productImage5,productImage13,

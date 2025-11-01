@@ -6,26 +6,22 @@ import '../../../utils/constants/colors.dart';
 class AppCircularContainer extends StatelessWidget {
   const AppCircularContainer({
     super.key,
-    this.width,
-    this.height,
-    this.radius = AppSizes.cardRadiusLg,
-    this.padding,
+    this.width = 400,
+    this.height = 400,
+    this.radius = 400,
+    this.padding = 0,
     this.child,
     this.backgroundColor = AppColors.white,
     this.margin,
-    this.showBorder = false,
-    this.borderColor = AppColors.borderPrimary,
   });
 
   final double? width;
   final double? height;
   final double radius;
-  final EdgeInsetsGeometry? padding;
+  final double padding;
   final Widget? child;
   final Color backgroundColor;
   final EdgeInsets? margin;
-  final bool showBorder;
-  final Color borderColor;
 
   @override
   Widget build(BuildContext context) {
@@ -33,10 +29,9 @@ class AppCircularContainer extends StatelessWidget {
       width: width,
       height: height,
       margin: margin,
-      padding: padding,
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        border: showBorder ? Border.all(color: borderColor) : null,
         color: backgroundColor,
       ),
       child: child,
