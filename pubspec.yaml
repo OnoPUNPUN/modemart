@@ -30,6 +30,7 @@ dependencies:
   # State Mangement
   get: ^4.7.2
   get_storage: ^2.1.1
+  carousel_slider: ^5.1.1
 
 # Packages used only during development/testing.
 dev_dependencies:
@@ -49,6 +50,7 @@ flutter:
     - assets/images/on_boarding_images/
     - assets/images/animations/
     - assets/icons/categories/
+    - assets/images/banners/
 
   # --------------------- Local fonts -----------------------
   fonts:

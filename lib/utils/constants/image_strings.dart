@@ -1,3 +1,5 @@
+import 'package:get/get.dart';
+
 class AppImages {
   // App Logos
   static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
@@ -155,11 +157,11 @@ class AppImages {
 
   //Banners
   static const String promoBanner1 =
-      "assets/images/products/promo-banner-1.png";
+      "assets/images/banners/promo-banner-1.png";
   static const String promoBanner2 =
-      "assets/images/products/promo-banner-2.png";
+      "assets/images/banners/promo-banner-2.png";
   static const String promoBanner3 =
-      "assets/images/products/promo-banner-3.png";
+      "assets/images/banners/promo-banner-3.png";
 //list of banner images
   static List<String> promoBannerImages = [
     promoBanner1,

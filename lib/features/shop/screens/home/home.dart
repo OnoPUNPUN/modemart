@@ -1,14 +1,15 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:modemart/common/custom_shapes/containers/app_circular_container.dart';
 import 'package:modemart/features/shop/screens/home/widget/app_home_categories.dart';
 import 'package:modemart/features/shop/screens/home/widget/home_app_bar.dart';
-import 'package:modemart/utils/constants/colors.dart';
+import 'package:modemart/features/shop/screens/home/widget/promo_sliders.dart';
 import 'package:modemart/utils/constants/image_strings.dart';
 import 'package:modemart/utils/constants/size.dart';
-import 'package:modemart/utils/helpers/helper_functions.dart';
 import '../../../../common/custom_shapes/containers/app_primary_header_container.dart';
 import '../../../../common/custom_shapes/containers/app_search_container.dart';
 import '../../../../common/texts/app_section_heading.dart';
-import '../../../../common/widgets/app_vertical_image_text.dart';
+import '../../../../common/widgets/app_rounded_image.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -54,10 +55,20 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(AppSizes.defaultSpace),
+              child: PromoSliders(
+                baners: [
+                  AppImages.promoBanner1,
+                  AppImages.promoBanner2,
+                  AppImages.promoBanner3,
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
