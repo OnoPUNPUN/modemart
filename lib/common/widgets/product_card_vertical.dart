@@ -106,31 +106,32 @@ class ProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: AppSizes.spaceBtwItems / 2),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      AppProductPriceText(price: '30000',),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: AppColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(AppSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              AppSizes.productRadius,
-                            ),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: AppSizes.iconLg * 1.2,
-                          height: AppSizes.iconLg * 1.2,
-                          child: Icon(Iconsax.add_copy, color: AppColors.white),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: AppSizes.sm),
+                  child: AppProductPriceText(price: '30000'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: AppColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(AppSizes.productRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: AppSizes.iconLg * 1.2,
+                    height: AppSizes.iconLg * 1.2,
+                    child: Icon(Iconsax.add_copy, color: AppColors.white),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -138,4 +139,3 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
-
