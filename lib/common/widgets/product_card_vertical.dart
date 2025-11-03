@@ -10,6 +10,7 @@ import 'package:modemart/utils/helpers/helper_functions.dart';
 import '../custom_shapes/containers/app_rounded_container.dart';
 import '../texts/app_product_price_text.dart';
 import '../texts/app_product_title_text.dart';
+import 'app_brarnd_title_with_verfied.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({super.key});
@@ -90,22 +91,7 @@ class ProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: AppSizes.xs),
-                      const Icon(
-                        Iconsax.verify,
-                        color: AppColors.primary,
-                        size: AppSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  AppBrarndTitleWithVerfied(title: 'Nike',),
                 ],
               ),
             ),
@@ -139,3 +125,4 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+

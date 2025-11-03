@@ -49,7 +49,7 @@ class AppImages {
       "assets/icons/categories/kitchen-accessories.png";
   static const String laptopsIcon = "assets/icons/categories/laptops.png";
   static const String mensShirtsIcon =
-      "assets/icons/categories/mens-shirts.png";
+      "assets/icons/categories/icons8-school-uniform-64.png";
   static const String mensShoesIcon = "assets/icons/categories/icons8-shoes-64.png";
   static const String mensWatchesIcon =
       "assets/icons/categories/mens-watches.png";
@@ -69,7 +69,7 @@ class AppImages {
   static const String womensBagsIcon =
       "assets/icons/categories/womens-bags.png";
   static const String womensDressesIcon =
-      "assets/icons/categories/womens-dresses.png";
+      "assets/icons/categories/icons8-tailors-dummy-64.png";
   static const String womensJewelleryIcon =
       "assets/icons/categories/womens-jewellery.png";
   static const String womensShoesIcon =
