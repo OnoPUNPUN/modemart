@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:modemart/common/custom_shapes/containers/app_rounded_container.dart';
 import 'package:modemart/common/custom_shapes/containers/app_search_container.dart';
 import 'package:modemart/common/layout/app_grid_layout.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
-import 'package:modemart/common/widgets/app_brand_show_case.dart';
 import 'package:modemart/common/widgets/app_cart_counting.dart';
 import 'package:modemart/common/widgets/appbar.dart';
 import 'package:modemart/common/widgets/tabbar.dart';
 import 'package:modemart/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:modemart/utils/constants/colors.dart';
-import 'package:modemart/utils/constants/enums.dart';
-import 'package:modemart/utils/constants/image_strings.dart';
 import 'package:modemart/utils/constants/size.dart';
 import 'package:modemart/utils/helpers/helper_functions.dart';
 
-import '../../../../common/widgets/app_brarnd_title_with_verfied.dart';
-import '../../../../common/widgets/app_circular_image.dart';
 import '../home/widget/app_brand_card.dart';
 
 class StoreScreen extends StatelessWidget {

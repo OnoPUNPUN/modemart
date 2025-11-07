@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/colors.dart';
 import '../../utils/constants/size.dart';
 
 class AppRoundedImage extends StatelessWidget {

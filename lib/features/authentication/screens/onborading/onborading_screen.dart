@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/features/authentication/screens/onborading/widgets/on_borading_dot_navigation.dart';
 import 'package:modemart/features/authentication/screens/onborading/widgets/on_borading_next_button.dart';
 import 'package:modemart/features/authentication/screens/onborading/widgets/on_borading_page.dart';

@@ -1,6 +1,5 @@
 import 'package:intl/intl.dart';
 
-import '../constants/text_strings.dart';
 
 /// VALIDATION CLASS
 class AppVaildator {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:modemart/utils/constants/size.dart';
 
 import '../../../utils/constants/colors.dart';
 

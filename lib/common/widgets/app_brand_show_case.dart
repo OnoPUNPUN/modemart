@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../features/shop/screens/home/widget/app_brand_card.dart';
 import '../../utils/constants/colors.dart';
-import '../../utils/constants/image_strings.dart';
 import '../../utils/constants/size.dart';
 import '../../utils/helpers/helper_functions.dart';
 import '../custom_shapes/containers/app_rounded_container.dart';

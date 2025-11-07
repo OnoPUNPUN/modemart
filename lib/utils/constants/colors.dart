@@ -9,7 +9,7 @@ class AppColors {
 
   // App Basic Colors
   static const Color primary = Color(0xFF4B68FF);
-  static const Color secondary = Color(0xFFFFFE24B);
+  static const Color secondary = Color(0xfffffe24b);
   static const Color accent = Color(0xFFB0C7FF);
 
   // Text Colors
@@ -45,7 +45,7 @@ class AppColors {
   // Error and Validation Colors
   static const Color error = Color(0xFFD32F2F);
   static const Color success = Color(0xFF388E3C);
-  static const Color warning = Color(0xFFFF57C00);
+  static const Color warning = Color(0xffff57c00);
   static const Color info = Color(0xFF1976D2);
 
   // Neutral Shades

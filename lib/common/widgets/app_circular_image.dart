@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:modemart/utils/helpers/helper_functions.dart';
 
 import '../../utils/constants/colors.dart';
-import '../../utils/constants/image_strings.dart';
 import '../../utils/constants/size.dart';
 
 class AppCircularImage extends StatelessWidget {
