@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../common/widgets/app_cart_counting.dart';
 import '../../../../../common/widgets/appbar.dart';
 import '../../../../../utils/constants/colors.dart';
