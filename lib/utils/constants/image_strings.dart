@@ -129,7 +129,7 @@ class AppImages {
   static const String productImage6 =
       "assets/images/products/product-slippers.png";
   static const String productImage11 =
-      "assets/images/products/nike-shoes.png";
+      "assets/images/products/NikeAirJOrdonWhiteRed.png";
   static const String productImage12 =
       "assets/images/products/samsung_s9_mobile_withback.png";
   static const String productImage13 =

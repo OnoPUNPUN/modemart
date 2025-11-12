@@ -59,7 +59,7 @@ class ProductCardVertical extends StatelessWidget {
                         vertical: AppSizes.xs,
                       ),
                       child: Text(
-                        "25%",
+                        "40%",
                         style: Theme.of(
                           context,
                         ).textTheme.labelLarge!.apply(color: AppColors.black),
@@ -87,7 +87,7 @@ class ProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const AppProductTitleText(
-                    title: 'Green Nike Air Shoes',
+                    title: 'Nike Air Jordon White Red',
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSizes.spaceBtwItems / 2),

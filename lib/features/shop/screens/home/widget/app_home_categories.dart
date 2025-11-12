@@ -16,7 +16,7 @@ class AppHomeCategories extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
           return AppVerticalImageText(
-            image: AppImages.mensShoesIcon,
+            image: AppImages.mensShirtsIcon,
             title: 'Shoes',
             onTap: () {},
           );

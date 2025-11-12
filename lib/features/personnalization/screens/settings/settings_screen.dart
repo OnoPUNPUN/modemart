@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/custom_shapes/containers/app_primary_header_container.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/common/widgets/appbar.dart';
+import 'package:modemart/features/shop/screens/profile/profile.dart';
 import 'package:modemart/utils/constants/size.dart';
 
 import '../../../../common/list_tile/app_user_profile_tile.dart';
@@ -33,7 +35,9 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwSections),
 
                   // User Profile Card
-                  AppUserProfileTile(),
+                  AppUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen()),
+                  ),
                   const SizedBox(height: AppSizes.spaceBtwSections),
                 ],
               ),
