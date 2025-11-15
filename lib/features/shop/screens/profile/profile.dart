@@ -39,12 +39,55 @@ class ProfileScreen extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwItems / 2),
                   const Divider(),
                   const SizedBox(height: AppSizes.spaceBtwItems),
+                  // Heading Profile Information
                   AppSectionHeading(
                     title: "Profile Information",
                     showActionButton: false,
                   ),
                   const SizedBox(height: AppSizes.spaceBtwItems),
-                  ProfileMenu(),
+                  ProfileMenu(
+                    title: 'Name',
+                    value: "Wasimul Bari Tonmoy",
+                    onPressed: () {},
+                  ),
+                  ProfileMenu(
+                    title: 'Username',
+                    value: "Wasimul_Bari_Tonmoy",
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: AppSizes.spaceBtwItems),
+                  const Divider(),
+                  const SizedBox(height: AppSizes.spaceBtwItems),
+
+                  // Heading Personal Info
+                  AppSectionHeading(
+                    title: "Personal Information",
+                    showActionButton: false,
+                  ),
+                  const SizedBox(height: AppSizes.spaceBtwItems),
+
+                  ProfileMenu(
+                    title: 'User ID',
+                    value: '24-56653-1',
+                    icon: Iconsax.copy_copy,
+                    onPressed: () {},
+                  ),
+                  ProfileMenu(
+                    title: 'Email',
+                    value: 'wasimulbaritonmoy@gmail.com',
+                    onPressed: () {},
+                  ),
+                  ProfileMenu(
+                    title: 'Phone Number',
+                    value: '01601592828',
+                    onPressed: () {},
+                  ),
+                  ProfileMenu(title: 'Gender', value: 'Male', onPressed: () {}),
+                  ProfileMenu(
+                    title: 'Date Of Birth',
+                    value: '13 Aug 2004',
+                    onPressed: () {},
+                  ),
                 ],
               ),
             ],

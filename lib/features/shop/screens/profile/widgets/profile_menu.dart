@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:modemart/utils/constants/size.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({
     super.key,
-    required this.icon,
+    this.icon = Iconsax.arrow_right_3_copy,
     required this.onPressed,
     required this.title,
     required this.value,
@@ -16,26 +17,34 @@ class ProfileMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          flex: 3,
-          child: Text(
-            'Name',
-            style: Theme.of(context).textTheme.bodySmall,
-            overflow: TextOverflow.ellipsis,
-          ),
+    return GestureDetector(
+      onTap: onPressed,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          vertical: AppSizes.spaceBtwItems / 1.5,
         ),
-        Expanded(
-          flex: 5,
-          child: Text(
-            'Wasimul Tonmoy',
-            style: Theme.of(context).textTheme.bodyMedium,
-            overflow: TextOverflow.ellipsis,
-          ),
+        child: Row(
+          children: [
+            Expanded(
+              flex: 3,
+              child: Text(
+                title,
+                style: Theme.of(context).textTheme.bodySmall,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            Expanded(
+              flex: 5,
+              child: Text(
+                value,
+                style: Theme.of(context).textTheme.bodyMedium,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            Icon(icon, size: 18),
+          ],
         ),
-        const Icon(Iconsax.arrow_right_3_copy, size: 18),
-      ],
+      ),
     );
   }
 }
