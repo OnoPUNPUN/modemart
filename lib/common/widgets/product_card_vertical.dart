@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/styles/shadows.dart';
 import 'package:modemart/common/widgets/app_circular_icon.dart';
 import 'package:modemart/common/widgets/app_rounded_image.dart';
+import 'package:modemart/features/shop/screens/product_details/product_details.dart';
 import 'package:modemart/utils/constants/colors.dart';
 import 'package:modemart/utils/constants/image_strings.dart';
 import 'package:modemart/utils/constants/size.dart';
@@ -19,14 +21,14 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool isDark = AppHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [AppShadowStyle.verticalShadow],
           borderRadius: BorderRadius.circular(AppSizes.productRadius),
-          color: isDark ? AppColors.darkGrey : AppColors.white,
+          color: isDark ? AppColors.darkerGrey : AppColors.white,
         ),
         child: Column(
           children: [
@@ -91,7 +93,7 @@ class ProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSizes.spaceBtwItems / 2),
-                  AppBrarndTitleWithVerfied(title: 'Nike',),
+                  AppBrarndTitleWithVerfied(title: 'Nike'),
                 ],
               ),
             ),
@@ -125,4 +127,3 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
-
