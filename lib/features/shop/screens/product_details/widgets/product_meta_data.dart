@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:modemart/common/custom_shapes/containers/app_rounded_container.dart';
+import 'package:modemart/utils/constants/colors.dart';
+import 'package:modemart/utils/constants/size.dart';
 import 'package:modemart/utils/helpers/helper_functions.dart';
 
 class ProductMetaData extends StatelessWidget {
@@ -14,7 +17,10 @@ class ProductMetaData extends StatelessWidget {
         Row(
           children: [
             // Sale Tag
-
+            AppRoundedContainer(
+              radius: AppSizes.sm,
+              backgroundColor: AppColors.secondary.withOpacity(0.8),
+            ),
             // Price
           ],
         ),
