@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modemart/features/shop/screens/product_details/widgets/product_image_slider.dart';
+import 'package:modemart/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:modemart/features/shop/screens/product_details/widgets/rating_and_share.dart';
 import 'package:modemart/utils/constants/size.dart';
 
@@ -27,6 +28,7 @@ class ProductDetails extends StatelessWidget {
                   // Rating & Share
                   AppRatingAndShare(),
                   // Price, Title, Stack & Brand
+                  ProductMetaData(),
                   // Attributes
                   // Checkout Button
                   // Description
