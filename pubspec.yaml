@@ -30,7 +30,11 @@ dependencies:
   # State Mangement
   get: ^4.7.2
   get_storage: ^2.1.1
+  
+
+  # Product Spcific
   carousel_slider: ^5.1.1
+  readmore: ^3.0.0
 
 # Packages used only during development/testing.
 dev_dependencies:
