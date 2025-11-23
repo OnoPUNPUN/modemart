@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/features/shop/screens/product_details/widgets/app_bottom_add_to_cart.dart';
@@ -7,6 +8,7 @@ import 'package:modemart/features/shop/screens/product_details/widgets/product_a
 import 'package:modemart/features/shop/screens/product_details/widgets/product_image_slider.dart';
 import 'package:modemart/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:modemart/features/shop/screens/product_details/widgets/rating_and_share.dart';
+import 'package:modemart/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:modemart/utils/constants/size.dart';
 import 'package:readmore/readmore.dart';
 
@@ -88,7 +90,7 @@ class ProductDetails extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const ProductReviews()),
                         icon: Icon(Iconsax.arrow_right_3_copy, size: 18),
                       ),
                     ],
