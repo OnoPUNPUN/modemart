@@ -94,6 +94,10 @@ class AppTextStrings {
   static const String electronics = "Electronics";
   static const String jewellers = "Jewellers";
 
+  // -- Ratin
+  static const String ratingHeading =
+      "Ratings and reviews are verified and are from people who use the same type of device that you use";
+
   //list of categories
   static const List<String> categories = [
     "beauty",

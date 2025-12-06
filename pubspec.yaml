@@ -9,7 +9,7 @@ version: 1.0.0+1
 
 # Dart SDK version constraint.
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.10.0
 
 # Packages required for the application to run.
 dependencies:
