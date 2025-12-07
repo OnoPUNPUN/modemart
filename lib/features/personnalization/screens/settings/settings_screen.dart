@@ -4,6 +4,7 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/custom_shapes/containers/app_primary_header_container.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/common/widgets/appbar.dart';
+import 'package:modemart/features/shop/screens/address/address_screen.dart';
 import 'package:modemart/features/shop/screens/profile/profile.dart';
 import 'package:modemart/utils/constants/size.dart';
 
@@ -57,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home_copy,
                     title: "My Address",
                     subtitle: "Set Shopping devlivery address",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const AddressScreen()),
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.shopping_cart_copy,
