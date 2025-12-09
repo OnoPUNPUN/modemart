@@ -14,7 +14,7 @@ class SingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool isDark = AppHelperFunctions.isDarkMode(context);
     return AppRoundedContainer(
-      padding: const EdgeInsets.all(AppSizes.sm),
+      padding: const EdgeInsets.all(AppSizes.md),
       width: double.infinity,
       showBorder: true,
       backgroundColor: selectedAddress

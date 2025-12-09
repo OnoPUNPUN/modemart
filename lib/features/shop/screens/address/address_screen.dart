@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:modemart/common/custom_shapes/containers/app_rounded_container.dart';
 import 'package:modemart/common/widgets/appbar.dart';
 import 'package:modemart/features/shop/screens/address/add_new_address.dart';
 import 'package:modemart/features/shop/screens/address/widgets/single_address.dart';
