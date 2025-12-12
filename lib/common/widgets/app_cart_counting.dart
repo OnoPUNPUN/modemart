@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:modemart/features/shop/screens/cart/cart_screen.dart';
 
 import '../../utils/constants/colors.dart';
 
 class AppCartCounting extends StatelessWidget {
-  const AppCartCounting({
-    super.key,
-    required this.onPressed,
-    this.iconColor,
-  });
+  const AppCartCounting({super.key, required this.onPressed, this.iconColor});
 
   final VoidCallback onPressed;
   final Color? iconColor;
@@ -18,7 +16,7 @@ class AppCartCounting extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: onPressed,
+          onPressed: () => Get.to(() => const CartScreen()),
           icon: Icon(Iconsax.shopping_bag, color: iconColor),
         ),
         Positioned(

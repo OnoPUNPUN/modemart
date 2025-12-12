@@ -13,7 +13,6 @@ class AppBrandShowCase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = AppHelperFunctions.isDarkMode(context);
     return AppRoundedContainer(
       showBorder: true,
       padding: EdgeInsets.all(AppSizes.md),
@@ -24,7 +23,7 @@ class AppBrandShowCase extends StatelessWidget {
         children: [
           // BRand with Products Count
           const AppBrandCard(showBorder: false),
-          const SizedBox(height: AppSizes.spaceBtwItems,),
+          const SizedBox(height: AppSizes.spaceBtwItems),
 
           // Brand Top 3 Product Images
           Row(
@@ -45,10 +44,7 @@ class AppBrandShowCase extends StatelessWidget {
         backgroundColor: isDark ? AppColors.darkGrey : AppColors.light,
         margin: const EdgeInsets.only(right: AppSizes.sm),
         padding: EdgeInsets.all(AppSizes.md),
-        child: Image(
-          fit: BoxFit.contain,
-          image: AssetImage(image),
-        ),
+        child: Image(fit: BoxFit.contain, image: AssetImage(image)),
       ),
     );
   }
