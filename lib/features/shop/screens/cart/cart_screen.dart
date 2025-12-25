@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:modemart/common/widgets/appbar.dart';
 import 'package:modemart/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:modemart/features/shop/screens/checkout/checkout.dart';
 import 'package:modemart/utils/constants/size.dart';
 
 class CartScreen extends StatelessWidget {
@@ -19,7 +21,10 @@ class CartScreen extends StatelessWidget {
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(AppSizes.defaultSpace),
-        child: ElevatedButton(onPressed: () {}, child: Text('Checkout ৳256.0')),
+        child: ElevatedButton(
+          onPressed: () => Get.to(() => CheckoutScreen()),
+          child: Text('Checkout ৳256.0'),
+        ),
       ),
     );
   }

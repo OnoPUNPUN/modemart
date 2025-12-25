@@ -1,7 +1,7 @@
-
 class AppImages {
   // App Logos
-  static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
+  static const String darkAppLogo =
+      "assets/logos/t-store-splash-logo-black.png";
   static const String lightAppLogo =
       "assets/logos/t-store-splash-logo-white.png";
 
@@ -49,7 +49,8 @@ class AppImages {
   static const String laptopsIcon = "assets/icons/categories/laptops.png";
   static const String mensShirtsIcon =
       "assets/icons/categories/icons8-school-uniform-64.png";
-  static const String mensShoesIcon = "assets/icons/categories/icons8-shoes-64.png";
+  static const String mensShoesIcon =
+      "assets/icons/categories/icons8-shoes-64.png";
   static const String mensWatchesIcon =
       "assets/icons/categories/mens-watches.png";
   static const String mobileAccessoriesIcon =
@@ -98,7 +99,7 @@ class AppImages {
     kenwoodLogo,
     hermanMillerLogo,
     ikeaLogo,
-    acerlogo
+    acerlogo,
   ];
 
   // -- Animations
@@ -136,15 +137,16 @@ class AppImages {
       "assets/images/products/tomi_dogfood.png";
   //list of product images
   static const List<String> topProducts = [
-    productImage5,productImage13,
-    productImage12
+    productImage5,
+    productImage13,
+    productImage12,
   ];
   static const List<String> productsImages = [
     productImage13,
     productImage12,
     productImage5,
     productImage6,
-    productImage11
+    productImage11,
   ];
   // -- Product Reviews
   static const String userProfileImage1 =
@@ -155,19 +157,16 @@ class AppImages {
       "assets/images/reviews/review_profile_image_3.jpeg";
 
   //Banners
-  static const String promoBanner1 =
-      "assets/images/banners/promo-banner-1.png";
-  static const String promoBanner2 =
-      "assets/images/banners/promo-banner-2.png";
-  static const String promoBanner3 =
-      "assets/images/banners/promo-banner-3.png";
-//list of banner images
+  static const String promoBanner1 = "assets/images/banners/promo-banner-1.png";
+  static const String promoBanner2 = "assets/images/banners/promo-banner-2.png";
+  static const String promoBanner3 = "assets/images/banners/promo-banner-3.png";
+  //list of banner images
   static List<String> promoBannerImages = [
     promoBanner1,
     promoBanner2,
-    promoBanner3
+    promoBanner3,
   ];
-//list of banners images
+  //list of banners images
   static const String banner1 = "assets/images/banners/banner_1.jpg";
   static const String banner2 = "assets/images/banners/banner_2.jpg";
   static const String banner3 = "assets/images/banners/banner_3.jpg";
@@ -176,7 +175,7 @@ class AppImages {
   static const String banner6 = "assets/images/banners/banner_6.jpg";
   static const String banner7 = "assets/images/banners/banner_7.jpg";
   static const String banner8 = "assets/images/banners/banner_8.jpg";
-//list of banner images
+  //list of banner images
   static List<String> bannersImages = [
     banner1,
     banner2,
@@ -185,7 +184,7 @@ class AppImages {
     banner5,
     banner6,
     banner7,
-    banner8
+    banner8,
   ];
   //Profile
   static const String user = "assets/images/profile/user.png";
@@ -198,6 +197,7 @@ class AppImages {
   static const String masterCard =
       "assets/icons/payment_methods/master-card.png";
   static const String paypal = "assets/icons/payment_methods/paypal.png";
+  static const String bkash = "assets/icons/payment_methods/BKash_logo.svg";
   static const String visa = "assets/icons/payment_methods/visa.png";
   static const String paystack = "assets/icons/payment_methods/paystack.png";
   static const String paytm = "assets/icons/payment_methods/paytm.png";
@@ -213,5 +213,6 @@ class AppImages {
     visa,
     paystack,
     paytm,
+    bkash,
   ];
 }
