@@ -4,6 +4,7 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/custom_shapes/containers/app_primary_header_container.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/common/widgets/appbar.dart';
+import 'package:modemart/features/shop/order/order.dart';
 import 'package:modemart/features/shop/screens/address/address_screen.dart';
 import 'package:modemart/features/shop/screens/profile/profile.dart';
 import 'package:modemart/utils/constants/size.dart';
@@ -70,7 +71,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick_copy,
                     title: "My Orders",
                     subtitle: "In-progress and past orders",
-                    onTap: () {},
+                    onTap: () => Get.to(() => Order()),
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.bank_copy,
