@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:modemart/features/shop/screens/sub-category/sub_categories.dart';
 
 import '../../../../../common/widgets/app_vertical_image_text.dart';
 import '../../../../../utils/constants/image_strings.dart';
@@ -18,7 +20,7 @@ class AppHomeCategories extends StatelessWidget {
           return AppVerticalImageText(
             image: AppImages.mensShirtsIcon,
             title: 'Shoes',
-            onTap: () {},
+            onTap: () => Get.to(() => const SubCategories()),
           );
         },
       ),

@@ -34,7 +34,7 @@ class BillingPaymentSection extends StatelessWidget {
               ),
             ),
             const SizedBox(width: AppSizes.spaceBtwItems / 2),
-            Text('Paypal', style: Theme.of(context).textTheme.bodyLarge),
+            Text('Bkash', style: Theme.of(context).textTheme.bodyLarge),
           ],
         ),
       ],
