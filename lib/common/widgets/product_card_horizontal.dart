@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:modemart/common/custom_shapes/containers/app_rounded_container.dart';
-import 'package:modemart/common/styles/shadows.dart';
 import 'package:modemart/common/texts/app_product_price_text.dart';
 import 'package:modemart/common/texts/app_product_title_text.dart';
 import 'package:modemart/common/widgets/app_brarnd_title_with_verfied.dart';

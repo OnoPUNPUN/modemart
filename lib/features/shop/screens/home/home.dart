@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:modemart/features/shop/screens/all_products/all_products.dart';
 import 'package:modemart/features/shop/screens/home/widget/app_home_categories.dart';
 import 'package:modemart/features/shop/screens/home/widget/home_app_bar.dart';
 import 'package:modemart/features/shop/screens/home/widget/promo_sliders.dart';
@@ -69,7 +71,14 @@ class Home extends StatelessWidget {
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections),
 
-                  // Products Grid
+                  // Heading
+                  AppSectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () => Get.to(() => const AllProducts()),
+                  ),
+                  const SizedBox(height: AppSizes.spaceBtwItems),
+
+                  // Popular Products
                   AppGridLayout(
                     itemCount: 4,
                     itemBuilder: (_, index) => const ProductCardVertical(),

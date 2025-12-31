@@ -12,7 +12,7 @@ class SubCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Appbar(title: Text('Sports Shirts'), showBackArrow: true),
+      appBar: Appbar(title: Text('Sports'), showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(AppSizes.defaultSpace),
