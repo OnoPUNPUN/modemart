@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:modemart/common/custom_shapes/containers/app_search_container.dart';
 import 'package:modemart/common/layout/app_grid_layout.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/common/widgets/app_cart_counting.dart';
 import 'package:modemart/common/widgets/appbar.dart';
 import 'package:modemart/common/widgets/tabbar.dart';
+import 'package:modemart/features/shop/screens/brand/all_brands.dart';
 import 'package:modemart/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:modemart/utils/constants/colors.dart';
 import 'package:modemart/utils/constants/size.dart';
@@ -57,7 +59,7 @@ class StoreScreen extends StatelessWidget {
                       AppSectionHeading(
                         title: 'Featured Brands',
                         showActionButton: true,
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => AllBrands()),
                       ),
                       const SizedBox(height: AppSizes.spaceBtwItems / 1.5),
 
