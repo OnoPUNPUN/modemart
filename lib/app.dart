@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modemart/features/authentication/screens/onborading/onborading_screen.dart';
+import 'package:modemart/utils/constants/colors.dart';
 import 'package:modemart/utils/theme/theme.dart';
 
 class App extends StatelessWidget {
@@ -13,7 +13,10 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const OnboradingScreen(),
+      home: const Scaffold(
+        backgroundColor: AppColors.primary,
+        body: Center(child: CircularProgressIndicator(color: Colors.white)),
+      ),
     );
   }
 }

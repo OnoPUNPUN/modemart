@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:modemart/common/layout/app_grid_layout.dart';
 import 'package:modemart/common/texts/app_section_heading.dart';
 import 'package:modemart/common/widgets/appbar.dart';
-import 'package:modemart/common/widgets/products/sortable/sortable_products.dart';
 import 'package:modemart/features/shop/screens/brand/brands_products.dart';
 import 'package:modemart/features/shop/screens/home/widget/app_brand_card.dart';
 import 'package:modemart/utils/constants/size.dart';

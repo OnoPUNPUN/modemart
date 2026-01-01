@@ -37,6 +37,7 @@ dependencies:
   readmore: ^3.0.0
   flutter_rating_bar: ^4.0.1
   any_image_view: ^1.9.0
+  firebase_core: ^4.3.0
 
 # Packages used only during development/testing.
 dev_dependencies:
