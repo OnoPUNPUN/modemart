@@ -166,6 +166,81 @@ class AppImages {
     promoBanner2,
     promoBanner3,
   ];
+
+  // list of animations
+  // -- Lottie Animations
+  static const String emptyFile =
+      "assets/images/animations/53207-empty-file.json";
+  static const String securityIcon =
+      "assets/images/animations/67263-security-icon-transparent.json";
+  static const String checkRegister =
+      "assets/images/animations/72462-check-register.json";
+  static const String searching =
+      "assets/images/animations/72785-searching.json";
+  static const String packagingInProgress =
+      "assets/images/animations/98783-packaging-in-progress.json";
+  static const String thankYou =
+      "assets/images/animations/104368-thank-you.json";
+  static const String paperPlane =
+      "assets/images/animations/110052-paper-plane.json";
+  static const String paymentSuccessful =
+      "assets/images/animations/120978-payment-successful.json";
+  static const String carRides =
+      "assets/images/animations/136491-animation-lottie-car-rides.json";
+  static const String pencilDrawing =
+      "assets/images/animations/140429-pencil-drawing.json";
+  static const String loadingJuggle =
+      "assets/images/animations/141397-loading-juggle.json";
+  static const String docerAnimation =
+      "assets/images/animations/141594-animation-of-docer.json";
+  static const String generalAnimation =
+      "assets/images/animations/Animation - 1734020174401.json";
+  static const String cloudUploading =
+      "assets/images/animations/cloud-uploading-animation.json";
+  static const String productInCart =
+      "assets/images/animations/lady-adding-product-in-cart-animation.json";
+  static const String loaderAnimation =
+      "assets/images/animations/loader-animation.json";
+  static const String carDelivery =
+      "assets/images/animations/order-complete-car-delivery-animation.json";
+
+  // -- Static Images (PNG)
+  static const String sammyComeBack =
+      "assets/images/animations/sammy-line-come-back-later.png";
+  static const String sammyReceivesMail =
+      "assets/images/animations/sammy-line-man-receives-a-mail.png";
+  static const String sammySale =
+      "assets/images/animations/sammy-line-sale.png";
+  static const String sammySuccess =
+      "assets/images/animations/sammy-line-success.png";
+
+  // -- Animated Images (GIF)
+  static const String sammyTravel =
+      "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
+  static const String sammyWorkout =
+      "assets/images/animations/sammy-line-workout.gif";
+
+  // List of all Lottie animations for easy access
+  static List<String> allLottieAnimations = [
+    emptyFile,
+    securityIcon,
+    checkRegister,
+    searching,
+    packagingInProgress,
+    thankYou,
+    paperPlane,
+    paymentSuccessful,
+    carRides,
+    pencilDrawing,
+    loadingJuggle,
+    docerAnimation,
+    generalAnimation,
+    cloudUploading,
+    productInCart,
+    loaderAnimation,
+    carDelivery,
+  ];
+
   //list of banners images
   static const String banner1 = "assets/images/banners/banner_1.jpg";
   static const String banner2 = "assets/images/banners/banner_2.jpg";

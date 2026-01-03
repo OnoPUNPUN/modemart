@@ -1,6 +1,5 @@
 import 'package:intl/intl.dart';
 
-
 /// VALIDATION CLASS
 class AppVaildator {
   /// Empty Text Validation
@@ -37,7 +36,13 @@ class AppVaildator {
 
       final DateTime today = DateTime.now();
       final int age =
-          today.year - dateOfBirth.year - ((today.month < dateOfBirth.month || (today.month == dateOfBirth.month && today.day < dateOfBirth.day)) ? 1 : 0);
+          today.year -
+          dateOfBirth.year -
+          ((today.month < dateOfBirth.month ||
+                  (today.month == dateOfBirth.month &&
+                      today.day < dateOfBirth.day))
+              ? 1
+              : 0);
 
       if (age < 18) {
         //return TTexts.dateOfBirthError;
@@ -66,7 +71,11 @@ class AppVaildator {
 
     // Check if the username doesn't start or end with an underscore or hyphen.
     if (isValid) {
-      isValid = !username.startsWith('_') && !username.startsWith('-') && !username.endsWith('_') && !username.endsWith('-');
+      isValid =
+          !username.startsWith('_') &&
+          !username.startsWith('-') &&
+          !username.endsWith('_') &&
+          !username.endsWith('-');
     }
 
     if (!isValid) {
@@ -137,15 +146,20 @@ class AppVaildator {
       return null;
     }
 
-    // Regular expression for phone number validation (assuming a 10-digit US phone number format)
-    final phoneRegExp = RegExp(r'^\d{10}$');
+    // Remove any spaces, dashes, or plus signs for validation
+    String cleanedValue = value.replaceAll(RegExp(r'[\s\-\+]'), '');
 
-    if (!phoneRegExp.hasMatch(value)) {
-      return 'Invalid phone number format (10 digits required).';
+    // BD phone number patterns:
+    // 1. 11 digits starting with 01 (e.g., 01712345678)
+    // 2. 13 digits with country code 880 (e.g., 8801712345678)
+    final phoneRegExp = RegExp(r'^(01[3-9]\d{8}|8801[3-9]\d{8})$');
+
+    if (!phoneRegExp.hasMatch(cleanedValue)) {
+      return 'Invalid BD phone number. Use format: 01XXXXXXXXX or +8801XXXXXXXXX';
     }
 
     return null;
   }
 
-// Add more custom validators as needed for your specific requirements.
+  // Add more custom validators as needed for your specific requirements.
 }

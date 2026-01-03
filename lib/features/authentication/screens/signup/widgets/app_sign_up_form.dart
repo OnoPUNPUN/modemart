@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:modemart/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:modemart/features/authentication/screens/signup/screens/verify_email.dart';
+import 'package:modemart/utils/validators/validators.dart';
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_strings.dart';
 import 'app_trems_condition.dart';
@@ -13,13 +15,18 @@ class AppSignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignupController());
     return Form(
+      key: controller.signupFormKey,
       child: Column(
         children: [
           Row(
             children: [
               Expanded(
                 child: TextFormField(
+                  controller: controller.firstName,
+                  validator: (value) =>
+                      AppVaildator.validateEmptyText('First Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTextStrings.firstName,
@@ -30,6 +37,9 @@ class AppSignUpForm extends StatelessWidget {
               const SizedBox(width: AppSizes.spaceBtwInputFields),
               Expanded(
                 child: TextFormField(
+                  controller: controller.lastName,
+                  validator: (value) =>
+                      AppVaildator.validateEmptyText('Last Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTextStrings.lastName,
@@ -43,6 +53,9 @@ class AppSignUpForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
           // Username
           TextFormField(
+            controller: controller.userName,
+            validator: (value) =>
+                AppVaildator.validateEmptyText('Username', value),
             expands: false,
             decoration: const InputDecoration(
               labelText: AppTextStrings.username,
@@ -52,6 +65,8 @@ class AppSignUpForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
           // Email
           TextFormField(
+            controller: controller.email,
+            validator: (value) => AppVaildator.validateEmail(value),
             expands: false,
             decoration: const InputDecoration(
               labelText: AppTextStrings.email,
@@ -61,6 +76,8 @@ class AppSignUpForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
           // Phone Number
           TextFormField(
+            controller: controller.phoneNumber,
+            validator: (value) => AppVaildator.validatePhoneNumber(value),
             expands: false,
             decoration: const InputDecoration(
               labelText: AppTextStrings.phoneNo,
@@ -70,7 +87,9 @@ class AppSignUpForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
           // Password
           TextFormField(
+            controller: controller.passwrod,
             obscureText: true,
+            validator: (value) => AppVaildator.validatePassword(value),
             decoration: const InputDecoration(
               labelText: AppTextStrings.password,
               prefixIcon: Icon(Iconsax.password_check),
@@ -88,7 +107,7 @@ class AppSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(() => const VerifyEmail()),
+              onPressed: () => controller.signUp(),
               child: const Text(AppTextStrings.createAccount),
             ),
           ),

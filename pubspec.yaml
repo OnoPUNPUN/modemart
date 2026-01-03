@@ -38,6 +38,8 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   any_image_view: ^1.9.0
   firebase_core: ^4.3.0
+  lottie: ^3.3.2
+  connectivity_plus: ^7.0.0
 
 # Packages used only during development/testing.
 dev_dependencies:
@@ -61,6 +63,7 @@ flutter:
     - assets/images/products/
     - assets/images/profile/
     - assets/icons/payment_methods/
+    - assets/images/animations/
 
   # --------------------- Local fonts -----------------------
   fonts:
